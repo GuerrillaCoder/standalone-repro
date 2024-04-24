@@ -29,7 +29,7 @@ namespace StandaloneRepo.ServiceModel.Companies
     }
 
     [ValidateIsAdmin]
-    [AutoApply(Behavior.AuditDelete)]
+    //[AutoApply(Behavior.AuditDelete)]
     public class DeleteCompany : IDeleteDb<Company>, IReturnVoid
     {
         public int Id { get; set; }
@@ -64,12 +64,12 @@ namespace StandaloneRepo.ServiceModel.Companies
         public string Country { get; set; }
     }
 
-    [ValidateIsAdmin]
-    [AutoApply(Behavior.AuditCreate)]
-    public class CreateApplicationUserCompany : ICreateDb<ApplicationUserCompany>, IReturn<IdResponse>
-    {
-        public string ApplicationUserId { get; set; }
-        public int CompanyId { get; set; }
-    }
+    //[ValidateIsAdmin]
+    //[AutoApply(Behavior.AuditCreate)]
+    //public class CreateApplicationUserCompany : ICreateDb<ApplicationUserCompany>, IReturn<IdResponse>
+    //{
+    //    public string ApplicationUserId { get; set; }
+    //    public int CompanyId { get; set; }
+    //}
 
 }

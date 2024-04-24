@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace StandaloneRepo.ServiceModel.Companies
 {
     [Authenticate]
-    public class QueryCompanies : QueryDb<Company>
+    public class QueryCompanies : QueryDb<Company, CompanyResponse>
     {
         public int? Id { get; set; }
     }

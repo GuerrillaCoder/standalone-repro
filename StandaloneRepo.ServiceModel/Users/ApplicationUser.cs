@@ -18,9 +18,9 @@ public class ApplicationUser : IdentityUser
     public string? GoogleProfilePageUrl { get; set; }
     public string? MicrosoftUserId { get; set; }
     public List<string> Permissions { get; set; } = new List<string>();
-    [Reference]
-    [NotMapped]
-    public List<ApplicationUserCompany> ApplicationUserCompanies { get; set; } = new();
+    //[Reference]
+    //[NotMapped]
+    //public List<ApplicationUserCompany> ApplicationUserCompanies { get; set; } = new();
 }
 
 //below are provided solely for access purposes

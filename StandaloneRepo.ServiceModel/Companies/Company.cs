@@ -21,9 +21,15 @@ namespace StandaloneRepo.ServiceModel.Companies
         [Reference]
         public List<Employee> Employees { get; set; }
 
-        [Reference]
-        public List<ApplicationUserCompany> ApplicationUserCompanies { get; set; }
+        //[Reference]
+        //public List<ApplicationUserCompany> ApplicationUserCompanies { get; set; }
 
+    }
+
+    public class CompanyResponse
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 
     public class CompanyDetails : AuditBase
